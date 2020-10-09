@@ -8,7 +8,7 @@ body {
   animation: Gradient 15s ease infinite;
 }
 
-@-webkit-keyframes Gradient {
+@keyframes Gradient {
   0% {
     background-position: 0% 50%;
   }
@@ -46,8 +46,12 @@ p {
   margin-top: 0;
 }
 
+span {
+  font-weight: 500;
+}
+
 .blinking{
-	animation:blinkingText 0.2s infinite;
+	animation:blinkingText 0.3s infinite;
 }
 
 @keyframes blinkingText{
