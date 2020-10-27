@@ -5,7 +5,7 @@ body {
   background: #282828;
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 600% 600%;
-  animation: Gradient 15s ease infinite;
+  animation: Gradient 5s ease infinite;
 }
 
 @keyframes Gradient {
@@ -56,9 +56,7 @@ span {
 
 @keyframes blinkingText{
 	0%{		color: #ffffff;	}
-	49%{	color: transparent;	}
-	50%{	color: transparent;	}
-	99%{	color:transparent;	}
+	50%{	color: #292929;	}
 	100%{	color: #ffffff;	}
 }
 
@@ -84,8 +82,6 @@ li {
   font-size: 40px;
   padding: 15px 15px;
   color: #ffffff;
-  border: solid 1px #ffffff;
-  border-radius: 50%;
   transition: .5s;
   overflow: hidden;
   transition-duration: 0.8s;
@@ -94,8 +90,7 @@ li {
 
 li:hover {
   color: #292929;
-  border: solid 1px #292929;
   transition: .5s;
-  transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
+  transform: scale(1.5) rotate(360deg);
+  -webkit-transform: scale(1.5) rotate(360deg);
 }
